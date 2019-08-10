@@ -1,0 +1,7 @@
+<view  class="cross" class="cross" wx:for="{{list}}" wx:key="index" >
+  <view class="one">
+    <view class="title" >{{item.name}}</view>
+    <video id="{{index}}" bindtap="videoPlay" class="video" src="{{item.videouri}}" ></video>
+    <view class="text" >{{item.text}}</view>
+  </view>
+</view>

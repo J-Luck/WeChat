@@ -1,0 +1,44 @@
+<view class="index">
+  <view class="source" wx:for="{{list.auto}}" wx:key="index" bindtap="goIds" data-lurl="{{item.link}}"  >
+    <view class="title" >{{item.title}}</view>
+    <image class="img" src="{{item.picInfo[0].url}}" ></image>
+    <view class="text" >{{item.source}}</view>
+  </view>
+  <view class="source" wx:for="{{list.dy}}" wx:key="index" bindtap="goIds" data-lurl="{{item.link}}"  >
+    <view class="title" >{{item.title}}</view>
+    <image class="img" src="{{item.picInfo[0].url}}" ></image>
+    <view class="text" >{{item.source}}</view>
+  </view>
+  <view class="source" wx:for="{{list.ent}}" wx:key="index" bindtap="goIds" data-lurl="{{item.link}}"  >
+    <view class="title" >{{item.title}}</view>
+    <image class="img" src="{{item.picInfo[0].url}}" ></image>
+    <view class="text" >{{item.source}}</view>
+  </view>
+  <view class="source" wx:for="{{list.money}}" wx:key="index" bindtap="goIds" data-lurl="{{item.link}}"  >
+    <view class="title" >{{item.title}}</view>
+    <image class="img" src="{{item.picInfo[0].url}}" ></image>
+    <view class="text" >{{item.source}}</view>
+  </view>
+  <view class="source" wx:for="{{list.sports}}" wx:key="index" bindtap="goIds" data-lurl="{{item.link}}"  >
+    <view class="title" >{{item.title}}</view>
+    <image class="img" src="{{item.picInfo[0].url}}" ></image>
+    <view class="text" >{{item.source}}</view>
+  </view>
+  <view class="source" wx:for="{{list.tech}}" wx:key="index" bindtap="goIds" data-lurl="{{item.link}}"  >
+    <view class="title" >{{item.title}}</view>
+    <image class="img" src="{{item.picInfo[0].url}}" ></image>
+    <view class="text" >{{item.source}}</view>
+  </view>
+  <view class="source" wx:for="{{list.toutiao}}" wx:key="index" bindtap="goIds" data-lurl="{{item.link}}"  >
+    <view class="title" >{{item.title}}</view>
+    <image class="img" src="{{item.picInfo[0].url}}" ></image>
+    <view class="text" >{{item.source}}</view>
+  </view>
+  <view class="source" wx:for="{{list.war}}" wx:key="index" bindtap="goIds" data-lurl="{{item.link}}"  >
+    <view class="title" >{{item.title}}</view>
+    <image class="img" src="{{item.picInfo[0].url}}" ></image>
+    <view class="text" >{{item.source}}</view>
+  </view>
+
+</view>
+
