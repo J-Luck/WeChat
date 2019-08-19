@@ -1,0 +1,40 @@
+/* pages/index/index.wxss */
+/* 修饰电影的区域 */
+/* 电影区域 */
+.movie{
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #ccc; 
+}
+/* 电影左侧图片 */
+.movie-img{
+  width: 200rpx;
+  height: 300rpx;
+  margin-right: 20rpx;
+}
+/* 电影右侧介绍 */
+.movie-info{
+  flex: 1;  /*将右侧区域充满   定义项目的放大比例 flex-grow*/
+  font-size: 28rpx;
+  line-height: 1.8;
+}
+/* 电影右侧标题 */
+.movie-title{
+  color: #666;
+  font-size: 40rpx;
+  font-weight:700;
+}
+/* 电影右侧评分 */
+.movie-score{
+  color: #faaf00;
+}
+/* 电影右侧主演 */
+/* 电影右侧年份 */
+/* 电影右侧按钮 */
+.movie-comment{
+  height: 60rpx;
+  background-color: #e54847;
+  color: #fff;
+  font-size: 26rpx;
+  margin-top: 120rpx;
+}

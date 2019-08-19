@@ -1,0 +1,17 @@
+<!--pages/mymovie/mymovie.wxml-->
+<view class="memovie">
+  <!--输入框-->
+  <van-cell-group>
+    <van-field
+      value="{{ conten }}"
+      placeholder="你喜欢的电影"
+      border="{{ false }}"
+      bind:change="onContentChange"
+    />
+  </van-cell-group>
+  <!--上传按钮（一张图片）-->
+  <van-button type="danger"  size="large" bindtap="myupload" >上传一张图片</van-button>
+  <view></view>
+  <!--提交按钮-->
+  <van-button type="primary" size="large" bindtap="mysubmit">提交</van-button>
+</view>

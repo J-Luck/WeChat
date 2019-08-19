@@ -1,0 +1,68 @@
+<!--pages/comment/comment.wxml-->
+<view>
+  <!--电影图片-->
+  <view class="detail-container" style="background:url('{{list.images.large}}') no-repeat top"></view>
+  <!--遮罩层-->
+  <view class="detail-mask"></view>
+  <!--电影介绍-->
+  <view class="detail-info" >
+    <!--电影图片-->
+    <image class="detail-img" src="{{list.images.large}}"></image>
+    <view class="detail" >
+      <!--电影标题-->
+      <view>{{list.aka}}</view>
+      <!--电影标题-->
+      <view>{{list.original_title}}</view>
+      <!--电影评分-->
+      <view class="detail-sc" >{{list.rating.average}}</view>
+      <!--电影国家-->
+      <view>{{list.countries[0]}}</view>
+      <!--电影导演-->
+      <view>{{list.directors[0].name}}</view>
+    </view>
+  </view>
+  <!--电影描述-->
+  <view class="desc" >
+   {{list.summary}}
+  </view>
+      <!--indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'-->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+    <block wx:for="{{list.photos}}" wx:key="index">  
+      <swiper-item>  
+        <image src="{{item.image}}" class="slide-image" mode="aspectFill"/>  
+      </swiper-item>  
+    </block>  
+  </swiper> 
+  <!--发表评论-->
+        <!--输入框-->
+  <van-cell-group>
+    <van-field
+      value="{{ value }}"
+      label="评论"
+      type="textarea"
+      placeholder="请输入评论"
+      bind:change="onContentChange"
+    />
+  </van-cell-group>
+  <!--电影打分-->
+        <!--评价-->
+  <van-rate
+    value="{{ score }}"
+    size="{{ 25 }}"
+    count="{{ 6 }}"
+    icon="like"
+    color="#f44"
+    void-icon="like-o"
+    bind:change="onScoreChange"
+  />
+  <!--图片上传的按钮-->
+  <van-button type="warning" size="large" bindtap="selectImage" >上传图片</van-button>
+  <!--图片列表预览区域-->
+  <view class="comment-view">
+    <image class="comment-img" wx:for="{{images}}" wx:key="index" src="{{item}}"></image>
+  </view>
+  <!--提交评论-->
+  <van-button size="large" type="primary" bindtap="mysubmit" >提交评论</van-button>
+</view>
+
+

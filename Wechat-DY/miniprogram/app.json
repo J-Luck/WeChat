@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mymovie/mymovie",
+    "pages/mymap/mymap",
+    "pages/comment/comment"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "豆瓣热门电影",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "电影",
+      "iconPath": "/images/index.png",
+      "selectedIconPath": "/images/index_active.png"
+      },
+      {
+      "pagePath": "pages/mymap/mymap",
+      "text": "位置",
+      "iconPath": "/images/map.png",
+      "selectedIconPath": "/images/map_active.png"
+      },
+      {
+      "pagePath": "pages/mymovie/mymovie",
+      "text": "喜欢",
+      "iconPath": "/images/myfa.png",
+      "selectedIconPath": "/images/myfa_active.png"
+      }
+    ]
+    
+  }
+}
