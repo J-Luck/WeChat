@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/album/add",
+    "pages/album/album",
+    "pages/addBaby/addBaby",
+    "pages/user/user",
+    "pages/photos/add",
+    "pages/photos/photos"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff7043",
+    "navigationBarTitleText": "乖宝宝相册",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/fruit/strew.png",
+        "selectedIconPath": "/images/fruit/pineapple.png"
+      },
+      {
+        "pagePath": "pages/album/album",
+        "text": "相册",
+        "iconPath": "/images/fruit/watermelon.png",
+        "selectedIconPath": "/images/fruit/mango.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/images/fruit/cherry.png",
+        "selectedIconPath": "/images/fruit/banana.png"
+      }
+    ]
+  },
+  "cloud": true,
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,37 @@
+<!--pages/home/home.wxml-->
+<view class="top-title">
+  <view  bindtap="babyMsg" data-id="{{item.id}}" class="title-name">
+    <image src="../../images/baby.jpg"></image>
+    <view class="baby-msg">
+      <text class="baby-name">{{uname}}</text>
+      <text class="baby-birthday">3周岁6个月6天</text>
+    </view>
+  </view>
+  <view  bindtap="upload" data-id="{{item.id}}" class="addpic">
+    <image src="/images/fruit/addpic.png"></image>
+  </view>
+</view>
+<view class="mybanner">
+  <swiper autoplay="true" interval="3000" duration="1000" circular="true" easing-function="easeInOutCubic">
+    <swiper-item wx:for="{{fileIDsArr}}" wx:key="i">
+      <image style="width: {{imagewidth*0.4}}px; height: {{imageheight*0.4}}px;" src="{{item.fileId}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="img-show"  wx:for="{{fileIDsArr}}" wx:key="i">
+  <view class="left-adorn">
+    <view class="top-sign"></view>
+    <view class="middle-sign" style="height:{{imageheight+50}}px"></view>
+  </view>
+  <view class="right-adorn">
+    <view class="baby-day">
+      <text>生日：{{bir}}</text>
+    </view>
+    <view class="center-img">
+        <image style="width: {{imagewidth}}px; height: {{imageheight}}px;" bindload="imageLoad" src="{{item.fileId}}"></image>
+    </view>
+    <view class="up-date">
+      <text>上传日期：{{uname}}</text>
+    </view>
+  </view>
+</view>

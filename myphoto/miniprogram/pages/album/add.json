@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "添加相册",
+  "usingComponents": {
+    "van-button": "vant-weapp/button/index"
+  }
+}

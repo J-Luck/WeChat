@@ -1,0 +1,22 @@
+<!--pages/album/album.wxml-->
+  <view class="albums">
+    <block wx:for="{{albums}}" wx:key="id" wx:for-index="idx" wx:for-item="album">
+      <navigator url="/pages/photos/photos?id={{idx}}">
+      <view class="album {{idx%2==0?'album-left':'album-right'}}">
+        <view class='first-photo'>
+          <view style="background-image: url({{album.coverURL}})"></view>
+        </view>
+        <view class='album-info'>
+            <view class="name">{{album.albumName}}</view>
+            <view class="photo-total">{{album.photos.length}} 张</view>
+        </view>
+      </view>
+      </navigator>
+    </block>
+    <view style="clear: both"></view>
+  </view>
+  <view class='options'>
+    <navigator class='add-item' url='/pages/album/add'>
+      <button class='add-item'>新建相册</button>
+    </navigator>      
+  </view>

@@ -1,0 +1,116 @@
+/* pages/photos/photos.wxss */
+page{
+  background:#f3c39d;
+}
+.images{
+    display: flex;
+}
+
+.boxleft, .boxright{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding:10px 0 0 0;
+}
+
+.boxleft{
+    padding-right: 2px;
+}
+
+.boxright{
+    padding-left: 2px;
+}
+
+.boxleft .pic .image, .boxright .pic .image{
+    /* display: block; */
+    width: 100%;
+}
+
+.mainbuttonview{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 2em;
+    text-align: center;
+}
+
+.mainbutton{
+    display: inline-block;
+    width: 100px;
+    transform: rotate(44deg);
+}
+
+.shadow{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    opacity: 0.5;
+    background-color:#000;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 2em;
+    height: 130px;
+    width: 100%;
+    z-index: 300;
+    left: 0;
+}
+
+.add-select{
+    width: 100%;
+    height: 80px;
+}
+
+.add-photo{
+    float: left;
+    width: 50%;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 4px;
+    border-radius: 14px;
+    background-color: rgb(209, 198, 198);
+}
+.add-close {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+}
+
+.close-item{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    height: 38px;
+    border-radius: 38px;
+    line-height: 38px;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    /* position: fixed;   */
+    bottom: 2em;
+    height: 138rpx;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+}
+.options .add-item{
+    display: block;
+    margin: 30rpx auto;
+    width: 100rpx;
+    height: 100rpx;
+}
